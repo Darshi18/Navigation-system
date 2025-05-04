@@ -1,0 +1,14 @@
+# Ignore build artifacts
+build/
+install/
+log/
+
+# Ignore editor configs
+.vscode/
+
+# Ignore generated files
+*.pdf
+*.gv
+
+# Ignore SQLite database
+*.db
