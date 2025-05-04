@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "multi_map_nav_interfaces__py",
+		"source" : "/home/dd/task/build/multi_map_nav_interfaces/multi_map_nav_interfaces__py"
+	}
+}

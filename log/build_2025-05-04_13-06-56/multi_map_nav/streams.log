@@ -1,0 +1,72 @@
+[0.026s] Invoking command in '/home/dd/task/build/multi_map_nav': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/dd/task/install/multi_map_nav_interfaces LD_LIBRARY_PATH=/home/dd/task/install/multi_map_nav_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/dd/task/install/multi_map_nav_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/dd/task/install/multi_map_nav_interfaces/lib/pkgconfig PYTHONPATH=/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/dd/task/install/multi_map_nav_interfaces/share /usr/bin/cmake --build /home/dd/task/build/multi_map_nav -- -j8 -l8
+[0.148s] [ 22%] Built target map_loader_node
+[0.152s] [ 33%] [32mBuilding CXX object CMakeFiles/multi_map_test_client.dir/src/multi_map_test_client.cpp.o[0m
+[0.156s] [ 55%] Built target amcl_reset_node
+[0.157s] [ 66%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/main.cpp.o[0m
+[0.160s] [ 77%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o[0m
+[7.900s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_test_client.cpp:[m[K In member function ‘[01m[Kvoid MultiMapTestClient::send_goal()[m[K’:
+[7.901s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_test_client.cpp:38:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kstart[m[K’
+[7.901s]    38 |     goal_msg.[01;31m[Kstart[m[K.header.frame_id = "map";
+[7.901s]       |              [01;31m[K^~~~~[m[K
+[7.901s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_test_client.cpp:39:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kstart[m[K’
+[7.901s]    39 |     goal_msg.[01;31m[Kstart[m[K.pose.position.x = 1.0;
+[7.901s]       |              [01;31m[K^~~~~[m[K
+[7.901s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_test_client.cpp:40:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kstart[m[K’
+[7.901s]    40 |     goal_msg.[01;31m[Kstart[m[K.pose.position.y = 1.0;
+[7.902s]       |              [01;31m[K^~~~~[m[K
+[7.902s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_test_client.cpp:41:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kstart[m[K’
+[7.902s]    41 |     goal_msg.[01;31m[Kstart[m[K.pose.orientation.w = 1.0;
+[7.902s]       |              [01;31m[K^~~~~[m[K
+[7.902s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_test_client.cpp:44:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kgoal[m[K’
+[7.902s]    44 |     goal_msg.[01;31m[Kgoal[m[K.header.frame_id = "map";
+[7.902s]       |              [01;31m[K^~~~[m[K
+[7.902s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_test_client.cpp:45:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kgoal[m[K’
+[7.902s]    45 |     goal_msg.[01;31m[Kgoal[m[K.pose.position.x = 2.0;
+[7.902s]       |              [01;31m[K^~~~[m[K
+[7.902s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_test_client.cpp:46:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kgoal[m[K’
+[7.903s]    46 |     goal_msg.[01;31m[Kgoal[m[K.pose.position.y = 2.0;
+[7.903s]       |              [01;31m[K^~~~[m[K
+[7.903s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_test_client.cpp:47:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kgoal[m[K’
+[7.903s]    47 |     goal_msg.[01;31m[Kgoal[m[K.pose.orientation.w = 1.0;
+[7.903s]       |              [01;31m[K^~~~[m[K
+[8.168s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:[m[K In member function ‘[01m[Kvoid MultiMapNavigator::send_goal(const PoseStamped&, const string&)[m[K’:
+[8.168s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:125:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kgoal[m[K’
+[8.168s]   125 |     goal_msg.[01;31m[Kgoal[m[K = goal_pose;
+[8.168s]       |              [01;31m[K^~~~[m[K
+[8.181s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.181s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.181s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.181s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.181s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.181s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.182s]                  from [01m[K/home/dd/task/src/multi_map_nav/include/multi_map_nav/multi_map_navigator.hpp:4[m[K,
+[8.182s]                  from [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:1[m[K:
+[8.182s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse MultiMapNavigator::handle_goal(const GoalUUID&, std::shared_ptr<const multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> > >)[m[K’:
+[8.182s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:145:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstart[m[K’
+[8.182s]   145 |               goal->[01;31m[Kstart[m[K.pose.position.x, goal->start.pose.position.y,
+[8.183s]       |                     [01;31m[K^~~~~[m[K
+[8.183s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:145:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstart[m[K’
+[8.183s]   145 |               goal->start.pose.position.x, goal->[01;31m[Kstart[m[K.pose.position.y,
+[8.183s]       |                                                  [01;31m[K^~~~~[m[K
+[8.183s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:146:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kgoal[m[K’
+[8.183s]   146 |               goal->[01;31m[Kgoal[m[K.pose.position.x, goal->goal.pose.position.y);
+[8.183s]       |                     [01;31m[K^~~~[m[K
+[8.183s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:146:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kgoal[m[K’
+[8.183s]   146 |               goal->goal.pose.position.x, goal->[01;31m[Kgoal[m[K.pose.position.y);
+[8.183s]       |                                                 [01;31m[K^~~~[m[K
+[8.185s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:[m[K In lambda function:
+[8.185s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:168:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kgoal[m[K’
+[8.185s]   168 |       send_goal(goal->[01;31m[Kgoal[m[K, goal->target_map);  // Goal pose and target map
+[8.185s]       |                       [01;31m[K^~~~[m[K
+[9.787s] gmake[2]: *** [CMakeFiles/multi_map_test_client.dir/build.make:76: CMakeFiles/multi_map_test_client.dir/src/multi_map_test_client.cpp.o] Error 1
+[9.787s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/multi_map_test_client.dir/all] Error 2
+[9.787s] gmake[1]: *** Waiting for unfinished jobs....
+[10.494s] gmake[2]: *** [CMakeFiles/multi_map_navigator_node.dir/build.make:90: CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o] Error 1
+[10.494s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/multi_map_navigator_node.dir/all] Error 2
+[10.494s] gmake: *** [Makefile:146: all] Error 2
+[10.505s] Invoked command in '/home/dd/task/build/multi_map_nav' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/dd/task/install/multi_map_nav_interfaces LD_LIBRARY_PATH=/home/dd/task/install/multi_map_nav_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/dd/task/install/multi_map_nav_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/dd/task/install/multi_map_nav_interfaces/lib/pkgconfig PYTHONPATH=/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/dd/task/install/multi_map_nav_interfaces/share /usr/bin/cmake --build /home/dd/task/build/multi_map_nav -- -j8 -l8

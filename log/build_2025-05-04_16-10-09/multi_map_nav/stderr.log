@@ -1,0 +1,11 @@
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse MultiMapNavigatorServer::handle_goal(const GoalUUID&, std::shared_ptr<const multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> > >)[m[K’:
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator_server.cpp:28:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   28 |     [01;35m[Kconst rclcpp_action::GoalUUID & uuid[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator_server.cpp:[m[K In lambda function:
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator_server.cpp:60:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct multi_map_nav_interfaces::action::MultiMapNavigate_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcurrent_status[m[K’
+   60 |       result->[01;31m[Kcurrent_status[m[K = "Arrived at " + goal->target_map;
+      |               [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/multi_map_navigator_server.dir/build.make:76: CMakeFiles/multi_map_navigator_server.dir/src/multi_map_navigator_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/multi_map_navigator_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

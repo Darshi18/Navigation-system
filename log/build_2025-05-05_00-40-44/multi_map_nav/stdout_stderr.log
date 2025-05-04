@@ -1,0 +1,13 @@
+[ 18%] Built target map_loader_node
+[35m[1mConsolidate compiler generated dependencies of target multi_map_navigator_node[0m
+[ 36%] Built target multi_map_navigator_server
+[ 54%] Built target amcl_reset_node
+[ 72%] Built target multi_map_test_client
+[ 81%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o[0m
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:[m[K In member function ‘[01m[Kvoid MultiMapNavigator::send_goal(double, double, double, const string&)[m[K’:
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:83:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct rclcpp_action::ClientGoalHandle<multi_map_nav_interfaces::action::MultiMapNavigate>::WrappedResult[m[K’ has no member named ‘[01m[Ksuccess[m[K’
+   83 |   if (result_future.get().[01;31m[Ksuccess[m[K) {
+      |                           [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/multi_map_navigator_node.dir/build.make:90: CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/multi_map_navigator_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

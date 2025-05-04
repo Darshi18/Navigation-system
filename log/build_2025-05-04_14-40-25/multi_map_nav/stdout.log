@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target multi_map_navigator_node[0m
+[ 22%] Built target multi_map_test_client
+[ 66%] Built target amcl_reset_node
+[ 66%] Built target map_loader_node
+[ 77%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o[0m

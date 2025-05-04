@@ -1,0 +1,4 @@
+Invoking command in '/home/dd/task/build/multi_map_nav_interfaces': /usr/bin/cmake --build /home/dd/task/build/multi_map_nav_interfaces -- -j8 -l8
+Invoked command in '/home/dd/task/build/multi_map_nav_interfaces' returned '0': /usr/bin/cmake --build /home/dd/task/build/multi_map_nav_interfaces -- -j8 -l8
+Invoking command in '/home/dd/task/build/multi_map_nav_interfaces': /usr/bin/cmake --install /home/dd/task/build/multi_map_nav_interfaces
+Invoked command in '/home/dd/task/build/multi_map_nav_interfaces' returned '0': /usr/bin/cmake --install /home/dd/task/build/multi_map_nav_interfaces

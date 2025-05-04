@@ -1,0 +1,387 @@
+[0.000000] (-) TimerEvent: {}
+[0.000444] (multi_map_nav_interfaces) JobQueued: {'identifier': 'multi_map_nav_interfaces', 'dependencies': OrderedDict()}
+[0.000492] (multi_map_nav) JobQueued: {'identifier': 'multi_map_nav', 'dependencies': OrderedDict([('multi_map_nav_interfaces', '/home/dd/task/install/multi_map_nav_interfaces')])}
+[0.000526] (multi_map_nav_interfaces) JobStarted: {'identifier': 'multi_map_nav_interfaces'}
+[0.015428] (multi_map_nav_interfaces) JobProgress: {'identifier': 'multi_map_nav_interfaces', 'progress': 'cmake'}
+[0.016507] (multi_map_nav_interfaces) JobProgress: {'identifier': 'multi_map_nav_interfaces', 'progress': 'build'}
+[0.017922] (multi_map_nav_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dd/task/build/multi_map_nav_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/dd/task/build/multi_map_nav_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'dd'), ('ROS_PACKAGE_PATH', '/home/dd/task/install/multi_map_nav_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dd/task/install/multi_map_nav_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dd'), ('OLDPWD', '/home/dd/task'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2311'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/dd/task/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/dd/task/install/multi_map_nav_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/dd/task/install/multi_map_nav_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dd-HP-Laptop-15-bs1xx:@/tmp/.ICE-unix/1585,unix/dd-HP-Laptop-15-bs1xx:/tmp/.ICE-unix/1585'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/55406316_b9c6_4b18_be7e_787fe50ba62e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BLQT52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dd/task/install/multi_map_nav:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dd/task/build/multi_map_nav_interfaces'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/dd/task/install/multi_map_nav:/home/dd/task/install/multi_map_nav_interfaces')]), 'shell': False}
+[0.098906] (-) TimerEvent: {}
+[0.199188] (-) TimerEvent: {}
+[0.241611] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299347] (-) TimerEvent: {}
+[0.399667] (-) TimerEvent: {}
+[0.500120] (-) TimerEvent: {}
+[0.600715] (-) TimerEvent: {}
+[0.652031] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.665964] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.689839] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.701003] (-) TimerEvent: {}
+[0.801340] (-) TimerEvent: {}
+[0.884379] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.901531] (-) TimerEvent: {}
+[1.002156] (-) TimerEvent: {}
+[1.021631] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.102264] (-) TimerEvent: {}
+[1.143366] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)\n'}
+[1.202370] (-) TimerEvent: {}
+[1.302699] (-) TimerEvent: {}
+[1.403193] (-) TimerEvent: {}
+[1.503482] (-) TimerEvent: {}
+[1.603816] (-) TimerEvent: {}
+[1.704221] (-) TimerEvent: {}
+[1.804678] (-) TimerEvent: {}
+[1.847878] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.904842] (-) TimerEvent: {}
+[2.005197] (-) TimerEvent: {}
+[2.105575] (-) TimerEvent: {}
+[2.205862] (-) TimerEvent: {}
+[2.306227] (-) TimerEvent: {}
+[2.406685] (-) TimerEvent: {}
+[2.479273] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.506825] (-) TimerEvent: {}
+[2.607200] (-) TimerEvent: {}
+[2.707532] (-) TimerEvent: {}
+[2.808419] (-) TimerEvent: {}
+[2.908833] (-) TimerEvent: {}
+[3.009195] (-) TimerEvent: {}
+[3.109575] (-) TimerEvent: {}
+[3.148126] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.209695] (-) TimerEvent: {}
+[3.216788] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.290018] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.290282] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.290460] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.309840] (-) TimerEvent: {}
+[3.410152] (-) TimerEvent: {}
+[3.510699] (-) TimerEvent: {}
+[3.535403] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.610715] (-) TimerEvent: {}
+[3.625457] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[3.653228] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/dd/task/build/multi_map_nav_interfaces\n'}
+[3.704548] (multi_map_nav_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_nav_interfaces__rosidl_generator_c\x1b[0m\n'}
+[3.710835] (-) TimerEvent: {}
+[3.725820] (multi_map_nav_interfaces) StdoutLine: {'line': b'[  3%] Built target multi_map_nav_interfaces__cpp\n'}
+[3.726433] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 12%] Built target multi_map_nav_interfaces__rosidl_generator_c\n'}
+[3.744350] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_multi_map_nav_interfaces\n'}
+[3.752164] (multi_map_nav_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_nav_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[3.752539] (multi_map_nav_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_nav_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[3.752708] (multi_map_nav_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_nav_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[3.775400] (multi_map_nav_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_nav_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[3.777404] (multi_map_nav_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_nav_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[3.783779] (multi_map_nav_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_nav_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.793731] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 22%] Built target multi_map_nav_interfaces__rosidl_typesupport_cpp\n'}
+[3.796013] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 32%] Built target multi_map_nav_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[3.797427] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 41%] Built target multi_map_nav_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[3.808567] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 51%] Built target multi_map_nav_interfaces__rosidl_typesupport_introspection_c\n'}
+[3.810958] (-) TimerEvent: {}
+[3.811312] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 61%] Built target multi_map_nav_interfaces__rosidl_typesupport_c\n'}
+[3.814860] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 70%] Built target multi_map_nav_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[3.857433] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 70%] Built target multi_map_nav_interfaces\n'}
+[3.896293] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 74%] Built target multi_map_nav_interfaces__py\n'}
+[3.911112] (-) TimerEvent: {}
+[3.915788] (multi_map_nav_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_nav_interfaces__rosidl_generator_py\x1b[0m\n'}
+[3.937680] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 80%] Built target multi_map_nav_interfaces__rosidl_generator_py\n'}
+[3.965489] (multi_map_nav_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_nav_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[3.965985] (multi_map_nav_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_nav_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[3.967591] (multi_map_nav_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_nav_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.995710] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 87%] Built target multi_map_nav_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[3.996985] (multi_map_nav_interfaces) StdoutLine: {'line': b'[ 93%] Built target multi_map_nav_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.999275] (multi_map_nav_interfaces) StdoutLine: {'line': b'[100%] Built target multi_map_nav_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.011241] (-) TimerEvent: {}
+[4.111721] (-) TimerEvent: {}
+[4.212074] (-) TimerEvent: {}
+[4.285913] (multi_map_nav_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[4.287009] (multi_map_nav_interfaces) StdoutLine: {'line': b'writing multi_map_nav_interfaces.egg-info/PKG-INFO\n'}
+[4.287343] (multi_map_nav_interfaces) StdoutLine: {'line': b'writing dependency_links to multi_map_nav_interfaces.egg-info/dependency_links.txt\n'}
+[4.287551] (multi_map_nav_interfaces) StdoutLine: {'line': b'writing top-level names to multi_map_nav_interfaces.egg-info/top_level.txt\n'}
+[4.290834] (multi_map_nav_interfaces) StdoutLine: {'line': b"reading manifest file 'multi_map_nav_interfaces.egg-info/SOURCES.txt'\n"}
+[4.292063] (multi_map_nav_interfaces) StdoutLine: {'line': b"writing manifest file 'multi_map_nav_interfaces.egg-info/SOURCES.txt'\n"}
+[4.312231] (-) TimerEvent: {}
+[4.350852] (multi_map_nav_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_multi_map_nav_interfaces_egg\n'}
+[4.373169] (multi_map_nav_interfaces) CommandEnded: {'returncode': 0}
+[4.375939] (multi_map_nav_interfaces) JobProgress: {'identifier': 'multi_map_nav_interfaces', 'progress': 'install'}
+[4.390344] (multi_map_nav_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dd/task/build/multi_map_nav_interfaces'], 'cwd': '/home/dd/task/build/multi_map_nav_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'dd'), ('ROS_PACKAGE_PATH', '/home/dd/task/install/multi_map_nav_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dd/task/install/multi_map_nav_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dd'), ('OLDPWD', '/home/dd/task'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2311'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/dd/task/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/dd/task/install/multi_map_nav_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/dd/task/install/multi_map_nav_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dd-HP-Laptop-15-bs1xx:@/tmp/.ICE-unix/1585,unix/dd-HP-Laptop-15-bs1xx:/tmp/.ICE-unix/1585'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/55406316_b9c6_4b18_be7e_787fe50ba62e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BLQT52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dd/task/install/multi_map_nav:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dd/task/build/multi_map_nav_interfaces'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/dd/task/install/multi_map_nav:/home/dd/task/install/multi_map_nav_interfaces')]), 'shell': False}
+[4.405769] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.406273] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/ament_index/resource_index/rosidl_interfaces/multi_map_nav_interfaces\n'}
+[4.406712] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces\n'}
+[4.406935] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action\n'}
+[4.407104] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/multi_map_navigate.h\n'}
+[4.407280] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail\n'}
+[4.407465] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__functions.c\n'}
+[4.407677] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__functions.h\n'}
+[4.407858] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__type_support.h\n'}
+[4.408262] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__struct.h\n'}
+[4.408533] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg\n'}
+[4.408836] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.409252] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/library_path.sh\n'}
+[4.409462] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/library_path.dsv\n'}
+[4.409609] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_generator_c.so\n'}
+[4.409785] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces\n'}
+[4.409933] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action\n'}
+[4.410052] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail\n'}
+[4.410167] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__rosidl_typesupport_fastrtps_c.h\n'}
+[4.410321] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg\n'}
+[4.410481] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.410633] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[4.410833] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces\n'}
+[4.411008] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action\n'}
+[4.411160] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail\n'}
+[4.411309] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__rosidl_typesupport_introspection_c.h\n'}
+[4.411458] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__type_support.c\n'}
+[4.411607] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg\n'}
+[4.411900] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.412061] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[4.412273] (-) TimerEvent: {}
+[4.412422] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_c.so\n'}
+[4.412581] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces\n'}
+[4.412680] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action\n'}
+[4.412771] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/multi_map_navigate.hpp\n'}
+[4.412860] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail\n'}
+[4.413076] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__struct.hpp\n'}
+[4.413163] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__builder.hpp\n'}
+[4.413243] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__type_support.hpp\n'}
+[4.413329] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__traits.hpp\n'}
+[4.413420] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg\n'}
+[4.413508] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.413595] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces\n'}
+[4.413682] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action\n'}
+[4.413770] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail\n'}
+[4.413858] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/dds_fastrtps\n'}
+[4.414069] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.414162] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg\n'}
+[4.414334] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.414550] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.414645] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces\n'}
+[4.414734] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action\n'}
+[4.414823] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail\n'}
+[4.414987] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.415089] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__type_support.cpp\n'}
+[4.415178] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[4.415267] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_cpp.so\n'}
+[4.415355] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/pythonpath.sh\n'}
+[4.415442] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/pythonpath.dsv\n'}
+[4.415659] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces-0.0.1-py3.10.egg-info\n'}
+[4.415749] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[4.415837] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[4.415944] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[4.416038] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[4.416126] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces\n'}
+[4.416213] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/action\n'}
+[4.416300] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/action/__init__.py\n'}
+[4.416387] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/action/_multi_map_navigate.py\n'}
+[4.416524] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/action/_multi_map_navigate_s.c\n'}
+[4.416726] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.416814] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.416911] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.417006] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/__init__.py\n'}
+[4.417086] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/_multi_map_nav_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[4.417166] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/libmulti_map_nav_interfaces__rosidl_generator_py.so\n'}
+[4.417252] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/_multi_map_nav_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.417366] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/_multi_map_nav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.479966] (multi_map_nav_interfaces) StdoutLine: {'line': b"Listing '/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces'...\n"}
+[4.480254] (multi_map_nav_interfaces) StdoutLine: {'line': b"Compiling '/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/__init__.py'...\n"}
+[4.480421] (multi_map_nav_interfaces) StdoutLine: {'line': b"Listing '/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/action'...\n"}
+[4.490420] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.491127] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.491793] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.492540] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_generator_py.so\n'}
+[4.492882] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/action/MultiMapNavigate.idl\n'}
+[4.493182] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/action/MultiMapNavigate.action\n'}
+[4.493327] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/ament_index/resource_index/package_run_dependencies/multi_map_nav_interfaces\n'}
+[4.493549] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/ament_index/resource_index/parent_prefix_path/multi_map_nav_interfaces\n'}
+[4.493775] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/ament_prefix_path.sh\n'}
+[4.493935] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/ament_prefix_path.dsv\n'}
+[4.494179] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/path.sh\n'}
+[4.494318] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/path.dsv\n'}
+[4.494482] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/local_setup.bash\n'}
+[4.494625] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/local_setup.sh\n'}
+[4.494764] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/local_setup.zsh\n'}
+[4.494851] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/local_setup.dsv\n'}
+[4.495015] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/package.dsv\n'}
+[4.495312] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/ament_index/resource_index/packages/multi_map_nav_interfaces\n'}
+[4.495557] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_generator_cExport.cmake\n'}
+[4.495721] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.495844] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.495981] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.496120] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.496203] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.496513] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[4.496622] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.496808] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_generator_cppExport.cmake\n'}
+[4.497064] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.497290] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.497428] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.497559] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.497698] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[4.497818] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.497954] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_generator_pyExport.cmake\n'}
+[4.498063] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.498150] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[4.498235] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.498367] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.498455] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.498540] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.498627] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.498750] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.498906] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfacesConfig.cmake\n'}
+[4.499055] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfacesConfig-version.cmake\n'}
+[4.499175] (multi_map_nav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/package.xml\n'}
+[4.503087] (multi_map_nav_interfaces) CommandEnded: {'returncode': 0}
+[4.512399] (-) TimerEvent: {}
+[4.540989] (multi_map_nav_interfaces) JobEnded: {'identifier': 'multi_map_nav_interfaces', 'rc': 0}
+[4.542664] (multi_map_nav) JobStarted: {'identifier': 'multi_map_nav'}
+[4.558348] (multi_map_nav) JobProgress: {'identifier': 'multi_map_nav', 'progress': 'cmake'}
+[4.559323] (multi_map_nav) JobProgress: {'identifier': 'multi_map_nav', 'progress': 'build'}
+[4.559914] (multi_map_nav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dd/task/build/multi_map_nav', '--', '-j8', '-l8'], 'cwd': '/home/dd/task/build/multi_map_nav', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'dd'), ('ROS_PACKAGE_PATH', '/home/dd/task/install/multi_map_nav_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dd/task/install/multi_map_nav_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dd'), ('OLDPWD', '/home/dd/task'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2311'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/dd/task/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/dd/task/install/multi_map_nav_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/dd/task/install/multi_map_nav_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dd-HP-Laptop-15-bs1xx:@/tmp/.ICE-unix/1585,unix/dd-HP-Laptop-15-bs1xx:/tmp/.ICE-unix/1585'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/55406316_b9c6_4b18_be7e_787fe50ba62e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BLQT52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dd/task/install/multi_map_nav:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dd/task/build/multi_map_nav'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/dd/task/install/multi_map_nav_interfaces:/home/dd/task/install/multi_map_nav')]), 'shell': False}
+[4.613020] (-) TimerEvent: {}
+[4.658464] (multi_map_nav) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_navigator_node\x1b[0m\n'}
+[4.660222] (multi_map_nav) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_test_client\x1b[0m\n'}
+[4.689615] (multi_map_nav) StdoutLine: {'line': b'[ 22%] Built target map_loader_node\n'}
+[4.697763] (multi_map_nav) StdoutLine: {'line': b'[ 44%] Built target amcl_reset_node\n'}
+[4.703430] (multi_map_nav) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/multi_map_test_client.dir/src/multi_map_test_client.cpp.o\x1b[0m\n'}
+[4.703816] (multi_map_nav) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o\x1b[0m\n'}
+[4.713033] (-) TimerEvent: {}
+[4.813561] (-) TimerEvent: {}
+[4.913861] (-) TimerEvent: {}
+[5.014302] (-) TimerEvent: {}
+[5.114942] (-) TimerEvent: {}
+[5.215318] (-) TimerEvent: {}
+[5.315984] (-) TimerEvent: {}
+[5.417034] (-) TimerEvent: {}
+[5.517572] (-) TimerEvent: {}
+[5.617914] (-) TimerEvent: {}
+[5.718384] (-) TimerEvent: {}
+[5.818969] (-) TimerEvent: {}
+[5.919271] (-) TimerEvent: {}
+[6.020117] (-) TimerEvent: {}
+[6.121117] (-) TimerEvent: {}
+[6.221676] (-) TimerEvent: {}
+[6.321998] (-) TimerEvent: {}
+[6.422512] (-) TimerEvent: {}
+[6.523370] (-) TimerEvent: {}
+[6.623764] (-) TimerEvent: {}
+[6.724426] (-) TimerEvent: {}
+[6.825414] (-) TimerEvent: {}
+[6.925986] (-) TimerEvent: {}
+[7.026307] (-) TimerEvent: {}
+[7.126810] (-) TimerEvent: {}
+[7.227532] (-) TimerEvent: {}
+[7.327873] (-) TimerEvent: {}
+[7.428412] (-) TimerEvent: {}
+[7.529250] (-) TimerEvent: {}
+[7.629830] (-) TimerEvent: {}
+[7.730140] (-) TimerEvent: {}
+[7.830471] (-) TimerEvent: {}
+[7.930953] (-) TimerEvent: {}
+[8.031309] (-) TimerEvent: {}
+[8.131646] (-) TimerEvent: {}
+[8.231989] (-) TimerEvent: {}
+[8.332464] (-) TimerEvent: {}
+[8.432809] (-) TimerEvent: {}
+[8.533160] (-) TimerEvent: {}
+[8.633626] (-) TimerEvent: {}
+[8.734051] (-) TimerEvent: {}
+[8.834378] (-) TimerEvent: {}
+[8.934991] (-) TimerEvent: {}
+[9.036006] (-) TimerEvent: {}
+[9.136460] (-) TimerEvent: {}
+[9.237006] (-) TimerEvent: {}
+[9.337918] (-) TimerEvent: {}
+[9.438456] (-) TimerEvent: {}
+[9.538876] (-) TimerEvent: {}
+[9.639508] (-) TimerEvent: {}
+[9.740181] (-) TimerEvent: {}
+[9.840609] (-) TimerEvent: {}
+[9.941210] (-) TimerEvent: {}
+[10.041847] (-) TimerEvent: {}
+[10.142371] (-) TimerEvent: {}
+[10.242833] (-) TimerEvent: {}
+[10.343291] (-) TimerEvent: {}
+[10.443737] (-) TimerEvent: {}
+[10.544269] (-) TimerEvent: {}
+[10.644861] (-) TimerEvent: {}
+[10.746228] (-) TimerEvent: {}
+[10.846814] (-) TimerEvent: {}
+[10.947382] (-) TimerEvent: {}
+[11.048054] (-) TimerEvent: {}
+[11.096274] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MultiMapNavigator::send_goal(const PoseStamped&, const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.097163] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:125:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kgoal\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.097472] (multi_map_nav) StderrLine: {'line': b'  125 |     goal_msg.\x1b[01;31m\x1b[Kgoal\x1b[m\x1b[K = goal_pose;\n'}
+[11.097660] (multi_map_nav) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.120498] (multi_map_nav) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[11.121124] (multi_map_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[11.121398] (multi_map_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.121636] (multi_map_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.121870] (multi_map_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.122130] (multi_map_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.122360] (multi_map_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.122566] (multi_map_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.122774] (multi_map_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.122999] (multi_map_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.123212] (multi_map_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.123418] (multi_map_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/include/multi_map_nav/multi_map_navigator.hpp:4\x1b[m\x1b[K,\n'}
+[11.123626] (multi_map_nav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:1\x1b[m\x1b[K:\n'}
+[11.123832] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Krclcpp_action::GoalResponse MultiMapNavigator::handle_goal(const GoalUUID&, std::shared_ptr<const multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.124070] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:145:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kstart\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.124291] (multi_map_nav) StderrLine: {'line': b'  145 |               goal->\x1b[01;31m\x1b[Kstart\x1b[m\x1b[K.pose.position.x, goal->start.pose.position.y,\n'}
+[11.124493] (multi_map_nav) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.124727] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:145:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kstart\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.124958] (multi_map_nav) StderrLine: {'line': b'  145 |               goal->start.pose.position.x, goal->\x1b[01;31m\x1b[Kstart\x1b[m\x1b[K.pose.position.y,\n'}
+[11.125191] (multi_map_nav) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.125432] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:146:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kgoal\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.127547] (multi_map_nav) StderrLine: {'line': b'  146 |               goal->\x1b[01;31m\x1b[Kgoal\x1b[m\x1b[K.pose.position.x, goal->goal.pose.position.y);\n'}
+[11.128533] (multi_map_nav) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.130374] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:146:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kgoal\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.130703] (multi_map_nav) StderrLine: {'line': b'  146 |               goal->goal.pose.position.x, goal->\x1b[01;31m\x1b[Kgoal\x1b[m\x1b[K.pose.position.y);\n'}
+[11.131286] (multi_map_nav) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.132693] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[11.133035] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:168:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kgoal\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.133303] (multi_map_nav) StderrLine: {'line': b'  168 |       send_goal(goal->\x1b[01;31m\x1b[Kgoal\x1b[m\x1b[K, goal->target_map);  // Goal pose and target map\n'}
+[11.133523] (multi_map_nav) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.148352] (-) TimerEvent: {}
+[11.248962] (-) TimerEvent: {}
+[11.349630] (-) TimerEvent: {}
+[11.450595] (-) TimerEvent: {}
+[11.551204] (-) TimerEvent: {}
+[11.651688] (-) TimerEvent: {}
+[11.752932] (-) TimerEvent: {}
+[11.853412] (-) TimerEvent: {}
+[11.953815] (-) TimerEvent: {}
+[12.054475] (-) TimerEvent: {}
+[12.155430] (-) TimerEvent: {}
+[12.256134] (-) TimerEvent: {}
+[12.356632] (-) TimerEvent: {}
+[12.457129] (-) TimerEvent: {}
+[12.557666] (-) TimerEvent: {}
+[12.658069] (-) TimerEvent: {}
+[12.758608] (-) TimerEvent: {}
+[12.859525] (-) TimerEvent: {}
+[12.959928] (-) TimerEvent: {}
+[13.060380] (-) TimerEvent: {}
+[13.160934] (-) TimerEvent: {}
+[13.261581] (-) TimerEvent: {}
+[13.361969] (-) TimerEvent: {}
+[13.462436] (-) TimerEvent: {}
+[13.563243] (-) TimerEvent: {}
+[13.663656] (-) TimerEvent: {}
+[13.764222] (-) TimerEvent: {}
+[13.864972] (-) TimerEvent: {}
+[13.928767] (multi_map_nav) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/multi_map_navigator_node.dir/build.make:90: CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o] Error 1\n'}
+[13.929806] (multi_map_nav) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/multi_map_navigator_node.dir/all] Error 2\n'}
+[13.930204] (multi_map_nav) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[13.965072] (-) TimerEvent: {}
+[14.065421] (-) TimerEvent: {}
+[14.165775] (-) TimerEvent: {}
+[14.266233] (-) TimerEvent: {}
+[14.366546] (-) TimerEvent: {}
+[14.429716] (multi_map_nav) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX executable multi_map_test_client\x1b[0m\n'}
+[14.466652] (-) TimerEvent: {}
+[14.567039] (-) TimerEvent: {}
+[14.667489] (-) TimerEvent: {}
+[14.767939] (-) TimerEvent: {}
+[14.840515] (multi_map_nav) StdoutLine: {'line': b'[ 77%] Built target multi_map_test_client\n'}
+[14.842402] (multi_map_nav) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[14.845778] (multi_map_nav) CommandEnded: {'returncode': 2}
+[14.861154] (multi_map_nav) JobEnded: {'identifier': 'multi_map_nav', 'rc': 2}
+[14.868029] (-) TimerEvent: {}
+[14.872616] (-) EventReactorShutdown: {}

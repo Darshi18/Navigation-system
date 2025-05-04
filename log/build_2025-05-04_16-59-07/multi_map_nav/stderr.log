@@ -1,0 +1,4 @@
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse MultiMapNavigatorServer::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<multi_map_nav_interfaces::action::MultiMapNavigate> >)[m[K’:
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator_server.cpp:36:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   36 |     [01;35m[Kconst std::shared_ptr<GoalHandleMultiMapNavigate> goal_handle[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K

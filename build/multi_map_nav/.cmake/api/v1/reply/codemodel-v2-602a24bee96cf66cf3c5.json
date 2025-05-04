@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-dbb74d7df79fce5ca311.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "multi_map_nav",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "amcl_reset_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-amcl_reset_node-4ad8e6f6efc55d0c7491.json",
+					"name" : "amcl_reset_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_loader_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_loader_node-0955508e8082265ec9f9.json",
+					"name" : "map_loader_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "multi_map_nav_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multi_map_nav_uninstall-6569a302ce05bcdf5feb.json",
+					"name" : "multi_map_nav_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "multi_map_navigator_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multi_map_navigator_node-11160999560a22be2ecd.json",
+					"name" : "multi_map_navigator_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "multi_map_navigator_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multi_map_navigator_server-01798c13dce39721d0cc.json",
+					"name" : "multi_map_navigator_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "multi_map_test_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multi_map_test_client-73be6ebd316a4196bf6c.json",
+					"name" : "multi_map_test_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c6d61622ba6537e039e4.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dd/task/build/multi_map_nav",
+		"source" : "/home/dd/task/src/multi_map_nav"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

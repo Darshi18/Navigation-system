@@ -1,0 +1,43 @@
+[0.114s] Invoking command in '/home/dd/task/build/multi_map_nav': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/dd/task/install/multi_map_nav_interfaces LD_LIBRARY_PATH=/home/dd/task/install/multi_map_nav_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/dd/task/install/multi_map_nav_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/dd/task/install/multi_map_nav_interfaces/lib/pkgconfig PYTHONPATH=/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/dd/task/install/multi_map_nav_interfaces/share /usr/bin/cmake --build /home/dd/task/build/multi_map_nav -- -j8 -l8
+[0.819s] [ 18%] Built target map_loader_node
+[0.836s] [ 36%] Built target multi_map_test_client
+[0.850s] [ 54%] Built target amcl_reset_node
+[0.882s] [ 63%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/main.cpp.o[0m
+[0.883s] [ 72%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o[0m
+[0.957s] [ 90%] Built target multi_map_navigator_server
+[32.816s] [100%] [32m[1mLinking CXX executable multi_map_navigator_node[0m
+[34.597s] [100%] Built target multi_map_navigator_node
+[34.621s] Invoked command in '/home/dd/task/build/multi_map_nav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/dd/task/install/multi_map_nav_interfaces LD_LIBRARY_PATH=/home/dd/task/install/multi_map_nav_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/dd/task/install/multi_map_nav_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/dd/task/install/multi_map_nav_interfaces/lib/pkgconfig PYTHONPATH=/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/dd/task/install/multi_map_nav_interfaces/share /usr/bin/cmake --build /home/dd/task/build/multi_map_nav -- -j8 -l8
+[34.653s] Invoking command in '/home/dd/task/build/multi_map_nav': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/dd/task/install/multi_map_nav_interfaces LD_LIBRARY_PATH=/home/dd/task/install/multi_map_nav_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/dd/task/install/multi_map_nav_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/dd/task/install/multi_map_nav_interfaces/lib/pkgconfig PYTHONPATH=/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/dd/task/install/multi_map_nav_interfaces/share /usr/bin/cmake --install /home/dd/task/build/multi_map_nav
+[34.685s] -- Install configuration: ""
+[34.705s] -- Installing: /home/dd/task/install/multi_map_nav/lib/multi_map_nav/multi_map_navigator_node
+[34.709s] -- Set runtime path of "/home/dd/task/install/multi_map_nav/lib/multi_map_nav/multi_map_navigator_node" to ""
+[34.731s] -- Up-to-date: /home/dd/task/install/multi_map_nav/lib/multi_map_nav/multi_map_navigator_server
+[34.752s] -- Up-to-date: /home/dd/task/install/multi_map_nav/lib/multi_map_nav/map_loader_node
+[34.758s] -- Up-to-date: /home/dd/task/install/multi_map_nav/lib/multi_map_nav/amcl_reset_node
+[34.778s] -- Up-to-date: /home/dd/task/install/multi_map_nav/lib/multi_map_nav/multi_map_test_client
+[34.779s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/launch
+[34.784s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/launch/bringup.launch.py
+[34.784s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/maps
+[34.789s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/maps/room1.png
+[34.790s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/maps/room2.pgm
+[34.790s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/maps/room2.yaml
+[34.790s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/maps/room1.pgm
+[34.790s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/maps/room2.png
+[34.790s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/maps/room1.yaml
+[34.790s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/ament_index/resource_index/package_run_dependencies/multi_map_nav
+[34.790s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/ament_index/resource_index/parent_prefix_path/multi_map_nav
+[34.791s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/environment/ament_prefix_path.sh
+[34.791s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/environment/ament_prefix_path.dsv
+[34.791s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/environment/path.sh
+[34.794s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/environment/path.dsv
+[34.795s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/local_setup.bash
+[34.795s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/local_setup.sh
+[34.796s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/local_setup.zsh
+[34.796s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/local_setup.dsv
+[34.796s] -- Installing: /home/dd/task/install/multi_map_nav/share/multi_map_nav/package.dsv
+[34.802s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/ament_index/resource_index/packages/multi_map_nav
+[34.803s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/cmake/multi_map_navConfig.cmake
+[34.803s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/cmake/multi_map_navConfig-version.cmake
+[34.803s] -- Up-to-date: /home/dd/task/install/multi_map_nav/share/multi_map_nav/package.xml
+[34.806s] Invoked command in '/home/dd/task/build/multi_map_nav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/dd/task/install/multi_map_nav_interfaces LD_LIBRARY_PATH=/home/dd/task/install/multi_map_nav_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/dd/task/install/multi_map_nav_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/dd/task/install/multi_map_nav_interfaces/lib/pkgconfig PYTHONPATH=/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/dd/task/install/multi_map_nav_interfaces/share /usr/bin/cmake --install /home/dd/task/build/multi_map_nav

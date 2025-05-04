@@ -1,0 +1,2 @@
+Invoking command in '/home/dd/task/build/multi_map_nav': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/dd/task/install/multi_map_nav_interfaces:/home/dd/task/install/multi_map_nav /usr/bin/cmake --build /home/dd/task/build/multi_map_nav -- -j8 -l8
+Invoked command in '/home/dd/task/build/multi_map_nav' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/dd/task/install/multi_map_nav_interfaces:/home/dd/task/install/multi_map_nav /usr/bin/cmake --build /home/dd/task/build/multi_map_nav -- -j8 -l8

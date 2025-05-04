@@ -1,0 +1,15 @@
+[0.031s] Invoking command in '/home/dd/task/build/multi_map_nav': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/dd/task/install/multi_map_nav_interfaces:/home/dd/task/install/multi_map_nav /usr/bin/cmake --build /home/dd/task/build/multi_map_nav -- -j8 -l8
+[0.225s] [ 18%] Built target map_loader_node
+[0.241s] [ 36%] Built target multi_map_navigator_server
+[0.245s] [ 45%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/main.cpp.o[0m
+[0.256s] [ 63%] Built target amcl_reset_node
+[0.257s] [ 72%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o[0m
+[0.266s] [ 90%] Built target multi_map_test_client
+[11.006s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:[m[K In member function ‘[01m[Kvoid MultiMapNavigator::send_goal(double, double, double, const string&)[m[K’:
+[11.006s] [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:83:26:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst rclcpp_action::ClientGoalHandle<multi_map_nav_interfaces::action::MultiMapNavigate>::WrappedResult[m[K’
+[11.006s]    83 |   if (result_future.get()[01;31m[K->[m[Ksuccess) {
+[11.006s]       |                          [01;31m[K^~[m[K
+[17.057s] gmake[2]: *** [CMakeFiles/multi_map_navigator_node.dir/build.make:90: CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o] Error 1
+[17.057s] gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/multi_map_navigator_node.dir/all] Error 2
+[17.059s] gmake: *** [Makefile:146: all] Error 2
+[17.196s] Invoked command in '/home/dd/task/build/multi_map_nav' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/dd/task/install/multi_map_nav_interfaces:/home/dd/task/install/multi_map_nav /usr/bin/cmake --build /home/dd/task/build/multi_map_nav -- -j8 -l8

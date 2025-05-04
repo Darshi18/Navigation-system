@@ -1,0 +1,168 @@
+[0.000000] (-) TimerEvent: {}
+[0.000412] (-) JobUnselected: {'identifier': 'multi_map_nav_interfaces'}
+[0.000546] (multi_map_nav) JobQueued: {'identifier': 'multi_map_nav', 'dependencies': OrderedDict([('multi_map_nav_interfaces', '/home/dd/task/install/multi_map_nav_interfaces')])}
+[0.000630] (multi_map_nav) JobStarted: {'identifier': 'multi_map_nav'}
+[0.021515] (multi_map_nav) JobProgress: {'identifier': 'multi_map_nav', 'progress': 'cmake'}
+[0.022748] (multi_map_nav) JobProgress: {'identifier': 'multi_map_nav', 'progress': 'build'}
+[0.023792] (multi_map_nav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dd/task/build/multi_map_nav', '--', '-j8', '-l8'], 'cwd': '/home/dd/task/build/multi_map_nav', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'dd'), ('ROS_PACKAGE_PATH', '/home/dd/task/install/multi_map_nav_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dd/task/install/multi_map_nav_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/dd'), ('OLDPWD', '/home/dd/task/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2311'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/dd/task/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dd'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/dd/task/install/multi_map_nav_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/dd/task/install/multi_map_nav_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dd'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dd-HP-Laptop-15-bs1xx:@/tmp/.ICE-unix/1585,unix/dd-HP-Laptop-15-bs1xx:/tmp/.ICE-unix/1585'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/55406316_b9c6_4b18_be7e_787fe50ba62e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BLQT52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dd/task/install/multi_map_nav:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dd/task/build/multi_map_nav'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/dd/task/install/multi_map_nav_interfaces:/home/dd/task/install/multi_map_nav')]), 'shell': False}
+[0.097881] (-) TimerEvent: {}
+[0.113757] (multi_map_nav) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_map_navigator_server\x1b[0m\n'}
+[0.173153] (multi_map_nav) StdoutLine: {'line': b'[ 18%] Built target map_loader_node\n'}
+[0.178900] (multi_map_nav) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/multi_map_navigator_server.dir/src/multi_map_navigator_server.cpp.o\x1b[0m\n'}
+[0.179578] (multi_map_nav) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o\x1b[0m\n'}
+[0.182228] (multi_map_nav) StdoutLine: {'line': b'[ 54%] Built target amcl_reset_node\n'}
+[0.182955] (multi_map_nav) StdoutLine: {'line': b'[ 72%] Built target multi_map_test_client\n'}
+[0.198047] (-) TimerEvent: {}
+[0.298491] (-) TimerEvent: {}
+[0.399163] (-) TimerEvent: {}
+[0.500189] (-) TimerEvent: {}
+[0.600731] (-) TimerEvent: {}
+[0.701055] (-) TimerEvent: {}
+[0.801475] (-) TimerEvent: {}
+[0.902257] (-) TimerEvent: {}
+[1.002688] (-) TimerEvent: {}
+[1.103257] (-) TimerEvent: {}
+[1.204126] (-) TimerEvent: {}
+[1.304550] (-) TimerEvent: {}
+[1.405045] (-) TimerEvent: {}
+[1.506392] (-) TimerEvent: {}
+[1.606993] (-) TimerEvent: {}
+[1.707372] (-) TimerEvent: {}
+[1.807911] (-) TimerEvent: {}
+[1.908626] (-) TimerEvent: {}
+[2.008971] (-) TimerEvent: {}
+[2.109373] (-) TimerEvent: {}
+[2.210006] (-) TimerEvent: {}
+[2.310420] (-) TimerEvent: {}
+[2.410919] (-) TimerEvent: {}
+[2.511537] (-) TimerEvent: {}
+[2.612792] (-) TimerEvent: {}
+[2.713483] (-) TimerEvent: {}
+[2.814310] (-) TimerEvent: {}
+[2.915510] (-) TimerEvent: {}
+[3.015898] (-) TimerEvent: {}
+[3.116322] (-) TimerEvent: {}
+[3.216798] (-) TimerEvent: {}
+[3.317342] (-) TimerEvent: {}
+[3.417740] (-) TimerEvent: {}
+[3.518438] (-) TimerEvent: {}
+[3.619418] (-) TimerEvent: {}
+[3.719939] (-) TimerEvent: {}
+[3.820351] (-) TimerEvent: {}
+[3.920875] (-) TimerEvent: {}
+[4.021785] (-) TimerEvent: {}
+[4.122237] (-) TimerEvent: {}
+[4.222812] (-) TimerEvent: {}
+[4.323727] (-) TimerEvent: {}
+[4.424197] (-) TimerEvent: {}
+[4.524649] (-) TimerEvent: {}
+[4.625319] (-) TimerEvent: {}
+[4.725787] (-) TimerEvent: {}
+[4.826178] (-) TimerEvent: {}
+[4.927517] (-) TimerEvent: {}
+[5.028581] (-) TimerEvent: {}
+[5.129008] (-) TimerEvent: {}
+[5.229537] (-) TimerEvent: {}
+[5.330333] (-) TimerEvent: {}
+[5.410314] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator_server.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Krclcpp_action::GoalResponse MultiMapNavigatorServer::handle_goal(const GoalUUID&, std::shared_ptr<const multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.410683] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator_server.cpp:28:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kuuid\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.410897] (multi_map_nav) StderrLine: {'line': b'   28 |     \x1b[01;35m\x1b[Kconst rclcpp_action::GoalUUID & uuid\x1b[m\x1b[K,\n'}
+[5.411110] (multi_map_nav) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[5.423440] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator_server.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[5.424296] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator_server.cpp:60:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct multi_map_nav_interfaces::action::MultiMapNavigate_Result_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Result_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kcurrent_status\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.424889] (multi_map_nav) StderrLine: {'line': b'   60 |       result->\x1b[01;31m\x1b[Kcurrent_status\x1b[m\x1b[K = "Arrived at " + goal->target_map;\n'}
+[5.425167] (multi_map_nav) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.430431] (-) TimerEvent: {}
+[5.530815] (-) TimerEvent: {}
+[5.596190] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Krclcpp_action::GoalResponse MultiMapNavigatorServer::handle_goal(const GoalUUID&, std::shared_ptr<const multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.596416] (multi_map_nav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:30:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kuuid\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.596534] (multi_map_nav) StderrLine: {'line': b'   30 |     \x1b[01;35m\x1b[Kconst rclcpp_action::GoalUUID & uuid\x1b[m\x1b[K,\n'}
+[5.596632] (multi_map_nav) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[5.631029] (-) TimerEvent: {}
+[5.731727] (-) TimerEvent: {}
+[5.832078] (-) TimerEvent: {}
+[5.932454] (-) TimerEvent: {}
+[6.033026] (-) TimerEvent: {}
+[6.133494] (-) TimerEvent: {}
+[6.233996] (-) TimerEvent: {}
+[6.334754] (-) TimerEvent: {}
+[6.435698] (-) TimerEvent: {}
+[6.536047] (-) TimerEvent: {}
+[6.636375] (-) TimerEvent: {}
+[6.969823] (-) TimerEvent: {}
+[7.070271] (-) TimerEvent: {}
+[7.171236] (-) TimerEvent: {}
+[7.271934] (-) TimerEvent: {}
+[7.372671] (-) TimerEvent: {}
+[7.473395] (-) TimerEvent: {}
+[7.489143] (multi_map_nav) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/multi_map_navigator_server.dir/build.make:76: CMakeFiles/multi_map_navigator_server.dir/src/multi_map_navigator_server.cpp.o] Error 1\n'}
+[7.489724] (multi_map_nav) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/multi_map_navigator_server.dir/all] Error 2\n'}
+[7.489970] (multi_map_nav) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[7.573717] (-) TimerEvent: {}
+[7.674114] (-) TimerEvent: {}
+[7.774660] (-) TimerEvent: {}
+[7.875553] (-) TimerEvent: {}
+[7.976292] (-) TimerEvent: {}
+[8.076938] (-) TimerEvent: {}
+[8.177460] (-) TimerEvent: {}
+[8.278618] (-) TimerEvent: {}
+[8.379324] (-) TimerEvent: {}
+[8.479800] (-) TimerEvent: {}
+[8.580705] (-) TimerEvent: {}
+[8.681446] (-) TimerEvent: {}
+[8.782074] (-) TimerEvent: {}
+[8.882653] (-) TimerEvent: {}
+[8.983261] (-) TimerEvent: {}
+[9.084060] (-) TimerEvent: {}
+[9.185086] (-) TimerEvent: {}
+[9.285920] (-) TimerEvent: {}
+[9.386581] (-) TimerEvent: {}
+[9.487500] (-) TimerEvent: {}
+[9.589111] (-) TimerEvent: {}
+[9.689942] (-) TimerEvent: {}
+[9.790685] (-) TimerEvent: {}
+[9.891761] (-) TimerEvent: {}
+[9.992671] (-) TimerEvent: {}
+[10.093463] (-) TimerEvent: {}
+[10.193880] (-) TimerEvent: {}
+[10.294796] (-) TimerEvent: {}
+[10.395546] (-) TimerEvent: {}
+[10.496196] (-) TimerEvent: {}
+[10.596576] (-) TimerEvent: {}
+[10.696894] (-) TimerEvent: {}
+[10.797223] (-) TimerEvent: {}
+[10.898383] (-) TimerEvent: {}
+[10.998744] (-) TimerEvent: {}
+[11.099033] (-) TimerEvent: {}
+[11.199407] (-) TimerEvent: {}
+[11.300091] (-) TimerEvent: {}
+[11.400434] (-) TimerEvent: {}
+[11.500732] (-) TimerEvent: {}
+[11.601263] (-) TimerEvent: {}
+[11.702194] (-) TimerEvent: {}
+[11.802899] (-) TimerEvent: {}
+[11.903278] (-) TimerEvent: {}
+[12.003820] (-) TimerEvent: {}
+[12.010420] (multi_map_nav) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable multi_map_navigator_node\x1b[0m\n'}
+[12.104035] (-) TimerEvent: {}
+[12.204862] (-) TimerEvent: {}
+[12.210695] (multi_map_nav) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o: in function `main':\n"}
+[12.210914] (multi_map_nav) StderrLine: {'line': b"multi_map_navigator.cpp:(.text+0xb): multiple definition of `main'; CMakeFiles/multi_map_navigator_node.dir/src/main.cpp.o:main.cpp:(.text+0x0): first defined here\n"}
+[12.305192] (-) TimerEvent: {}
+[12.406030] (-) TimerEvent: {}
+[12.506364] (-) TimerEvent: {}
+[12.606771] (-) TimerEvent: {}
+[12.707401] (-) TimerEvent: {}
+[12.807990] (-) TimerEvent: {}
+[12.908381] (-) TimerEvent: {}
+[13.008864] (-) TimerEvent: {}
+[13.021112] (multi_map_nav) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/multi_map_navigator_node.dir/src/main.cpp.o: in function `void __gnu_cxx::new_allocator<MultiMapNavigator>::construct<MultiMapNavigator>(MultiMapNavigator*)':\n"}
+[13.021368] (multi_map_nav) StderrLine: {'line': b"main.cpp:(.text._ZN9__gnu_cxx13new_allocatorI17MultiMapNavigatorE9constructIS1_JEEEvPT_DpOT0_[_ZN9__gnu_cxx13new_allocatorI17MultiMapNavigatorE9constructIS1_JEEEvPT_DpOT0_]+0x31): undefined reference to `MultiMapNavigator::MultiMapNavigator()'\n"}
+[13.055911] (multi_map_nav) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[13.072083] (multi_map_nav) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/multi_map_navigator_node.dir/build.make:412: multi_map_navigator_node] Error 1\n'}
+[13.073063] (multi_map_nav) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/multi_map_navigator_node.dir/all] Error 2\n'}
+[13.073669] (multi_map_nav) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.078798] (multi_map_nav) CommandEnded: {'returncode': 2}
+[13.108936] (-) TimerEvent: {}
+[13.131000] (multi_map_nav) JobEnded: {'identifier': 'multi_map_nav', 'rc': 2}
+[13.141943] (-) EventReactorShutdown: {}

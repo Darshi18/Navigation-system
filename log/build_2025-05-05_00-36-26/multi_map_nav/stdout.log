@@ -1,0 +1,6 @@
+[ 18%] Built target map_loader_node
+[ 36%] Built target multi_map_navigator_server
+[ 45%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/main.cpp.o[0m
+[ 63%] Built target amcl_reset_node
+[ 72%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o[0m
+[ 90%] Built target multi_map_test_client

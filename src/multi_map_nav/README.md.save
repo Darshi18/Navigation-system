@@ -1,0 +1,89 @@
+This project implements a multi-map navigation system using ROS 2 and C++, where a robot navigates across individually mapped rooms via "wormholes" — overlapping regions defined between maps. A SQLite database is used to store wormhole positions and trajectory data.
+
+Features
+
+    Navigate across multiple maps using wormholes.
+
+    Wormhole positions stored in a SQLite database.
+
+    Fully functional C++ Action Server for map-aware goal navigation.
+
+    Automatic switching between maps with AMCL reset.
+
+    Trajectory logging and visualization using Python + Matplotlib.
+
+1. Navigation Logic (Pseudocode)
+
+def execute_navigation(goal):
+    if current_map == goal.target_map:
+        send_navigation_goal(goal.position)
+    else:
+        wormhole_pose = get_wormhole_pose(goal.target_map)
+        record_trajectory_point(current_position, "to_wormhole")
+
+        send_navigation_goal(wormhole_pose)
+        wait_until_arrival()
+
+        switch_map(goal.target_map)
+        reset_localization()
+
+        record_trajectory_point(current_position, "after_switch")
+
+        send_navigation_goal(goal.position)
+        wait_until_arrival()
+
+        record_trajectory_point(goal.position, "goal_reached")
+
+     Note: The record_trajectory_point() function logs the robot's position, phase, and timestamp to the SQLite database.
+
+2. SQL Database Schema
+Wormhole Table
+
+CREATE TABLE wormholes (
+    id INTEGER PRIMARY KEY,
+    source_room TEXT NOT NULL,
+    target_room TEXT NOT NULL,
+    x1 REAL NOT NULL,
+    y1 REAL NOT NULL,
+    x2 REAL NOT NULL,
+    y2 REAL NOT NULL
+);
+
+Trajectory Log Table
+
+CREATE TABLE trajectory_log (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    x REAL NOT NULL,
+    y REAL NOT NULL,
+    phase TEXT NOT NULL,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+3. Trajectory Visualization
+
+You can visualize the robot's logged path using this Python script:
+
+import sqlite3
+import matplotlib.pyplot as plt
+
+conn = sqlite3.connect('wormholes.db')
+cursor = conn.cursor()
+
+cursor.execute("SELECT x, y, phase FROM trajectory_log")
+rows = cursor.fetchall()
+
+x_vals, y_vals, labels = zip(*rows)
+
+plt.figure(figsize=(10, 6))
+plt.plot(x_vals, y_vals, marker='o', linestyle='-')
+
+for i, label in enumerate(labels):
+    plt.text(x_vals[i], y_vals[i], label, fontsize=9)
+
+plt.title("Multi-Map Trajectory")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.grid(True)
+plt.show()
+
+

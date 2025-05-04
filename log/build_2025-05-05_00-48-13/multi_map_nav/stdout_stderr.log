@@ -1,0 +1,40 @@
+[35m[1mConsolidate compiler generated dependencies of target multi_map_navigator_node[0m
+[ 18%] Built target amcl_reset_node
+[ 36%] Built target map_loader_node
+[ 54%] Built target multi_map_test_client
+[ 72%] Built target multi_map_navigator_server
+[ 81%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o[0m
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:[m[K In member function ‘[01m[Kvoid MultiMapNavigator::send_goal(double, double, double, const string&)[m[K’:
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:87:11:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Krclcpp_action::ClientGoalHandle<multi_map_nav_interfaces::action::MultiMapNavigate>::WrappedResult[m[K’
+   87 | if (result[01;31m[K->[m[Ksuccess) {  // Access success here
+      |           [01;31m[K^~[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:94:35:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+   94 | void MultiMapNavigator::switch_map[01;31m[K([m[Kconst std::string & map_name)
+      |                                   [01;31m[K^[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:122:35:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  122 | void MultiMapNavigator::reset_amcl[01;31m[K([m[K)
+      |                                   [01;31m[K^[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:127:67:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  127 | std::pair<double, double> MultiMapNavigator::get_wormhole_position[01;31m[K([m[Kconst std::string & map_name)
+      |                                                                   [01;31m[K^[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:149:59:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  149 | rclcpp_action::GoalResponse MultiMapNavigator::handle_goal[01;31m[K([m[K
+      |                                                           [01;31m[K^[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:157:63:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  157 | rclcpp_action::CancelResponse MultiMapNavigator::handle_cancel[01;31m[K([m[K
+      |                                                               [01;31m[K^[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:164:40:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  164 | void MultiMapNavigator::handle_accepted[01;31m[K([m[K
+      |                                        [01;31m[K^[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:170:43:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  170 | void MultiMapNavigator::execute_navigation[01;31m[K([m[K
+      |                                           [01;31m[K^[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:243:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  243 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:52:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   52 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/multi_map_navigator_node.dir/build.make:90: CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/multi_map_navigator_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

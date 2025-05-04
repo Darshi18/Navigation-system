@@ -1,0 +1,6 @@
+Invoking command in '/home/dd/task/build/multi_map_nav_interfaces': /usr/bin/cmake /home/dd/task/src/multi_map_nav_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/dd/task/install/multi_map_nav_interfaces
+Invoked command in '/home/dd/task/build/multi_map_nav_interfaces' returned '0': /usr/bin/cmake /home/dd/task/src/multi_map_nav_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/dd/task/install/multi_map_nav_interfaces
+Invoking command in '/home/dd/task/build/multi_map_nav_interfaces': /usr/bin/cmake --build /home/dd/task/build/multi_map_nav_interfaces -- -j8 -l8
+Invoked command in '/home/dd/task/build/multi_map_nav_interfaces' returned '0': /usr/bin/cmake --build /home/dd/task/build/multi_map_nav_interfaces -- -j8 -l8
+Invoking command in '/home/dd/task/build/multi_map_nav_interfaces': /usr/bin/cmake --install /home/dd/task/build/multi_map_nav_interfaces
+Invoked command in '/home/dd/task/build/multi_map_nav_interfaces' returned '0': /usr/bin/cmake --install /home/dd/task/build/multi_map_nav_interfaces

@@ -1,0 +1,46 @@
+[35m[1mConsolidate compiler generated dependencies of target multi_map_test_client[0m
+[35m[1mConsolidate compiler generated dependencies of target multi_map_navigator_node[0m
+[ 22%] Built target amcl_reset_node
+[ 44%] Built target map_loader_node
+[ 55%] [32mBuilding CXX object CMakeFiles/multi_map_test_client.dir/src/multi_map_test_client.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o[0m
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:[m[K In member function ‘[01m[Kvoid MultiMapNavigator::send_goal(const PoseStamped&, const string&)[m[K’:
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:125:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kgoal[m[K’
+  125 |     goal_msg.[01;31m[Kgoal[m[K = goal_pose;
+      |              [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/dd/task/src/multi_map_nav/include/multi_map_nav/multi_map_navigator.hpp:4[m[K,
+                 from [01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:1[m[K:
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse MultiMapNavigator::handle_goal(const GoalUUID&, std::shared_ptr<const multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> > >)[m[K’:
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:145:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstart[m[K’
+  145 |               goal->[01;31m[Kstart[m[K.pose.position.x, goal->start.pose.position.y,
+      |                     [01;31m[K^~~~~[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:145:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstart[m[K’
+  145 |               goal->start.pose.position.x, goal->[01;31m[Kstart[m[K.pose.position.y,
+      |                                                  [01;31m[K^~~~~[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:146:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kgoal[m[K’
+  146 |               goal->[01;31m[Kgoal[m[K.pose.position.x, goal->goal.pose.position.y);
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:146:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kgoal[m[K’
+  146 |               goal->goal.pose.position.x, goal->[01;31m[Kgoal[m[K.pose.position.y);
+      |                                                 [01;31m[K^~~~[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:[m[K In lambda function:
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:168:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct multi_map_nav_interfaces::action::MultiMapNavigate_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kgoal[m[K’
+  168 |       send_goal(goal->[01;31m[Kgoal[m[K, goal->target_map);  // Goal pose and target map
+      |                       [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/multi_map_navigator_node.dir/build.make:90: CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/multi_map_navigator_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 77%] [32m[1mLinking CXX executable multi_map_test_client[0m
+[ 77%] Built target multi_map_test_client
+gmake: *** [Makefile:146: all] Error 2

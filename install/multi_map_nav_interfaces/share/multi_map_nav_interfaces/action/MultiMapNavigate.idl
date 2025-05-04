@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from multi_map_nav_interfaces/action/MultiMapNavigate.action
+// generated code does not contain a copyright notice
+
+
+module multi_map_nav_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal definition")
+    struct MultiMapNavigate_Goal {
+      double x;
+
+      double y;
+
+      double theta;
+
+      string target_map;
+    };
+    @verbatim (language="comment", text=
+      "Result definition")
+    struct MultiMapNavigate_Result {
+      boolean success;
+    };
+    @verbatim (language="comment", text=
+      "Feedback definition")
+    struct MultiMapNavigate_Feedback {
+      string current_status;
+    };
+  };
+};

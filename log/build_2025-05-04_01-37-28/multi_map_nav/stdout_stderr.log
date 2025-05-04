@@ -1,0 +1,13 @@
+[ 28%] Built target map_loader_node
+[ 57%] Built target amcl_reset_node
+[ 71%] [32mBuilding CXX object CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o[0m
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:[m[K In member function ‘[01m[Kgeometry_msgs::msg::PoseStamped MultiMapNavigator::get_wormhole_pose(const string&, const string&)[m[K’:
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:48:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::strstd[m[K’ has not been declared
+   48 |   std::[01;31m[Kstrstd[m[K::string sql = "SELECT from_pose_x, from_pose_y, from_theta FROM wormholes WHERE from_map='" + from_map + "' AND to_map='" + to_map + "' LIMIT 1;";
+      |        [01;31m[K^~~~~~[m[K
+[01m[K/home/dd/task/src/multi_map_nav/src/multi_map_navigator.cpp:50:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ksql[m[K’ was not declared in this scope
+   50 |   if (sqlite3_prepare_v2(db_, [01;31m[Ksql[m[K.c_str(), -1, &stmt, nullptr) == SQLITE_OK) {
+      |                               [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/multi_map_navigator_node.dir/build.make:90: CMakeFiles/multi_map_navigator_node.dir/src/multi_map_navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/multi_map_navigator_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

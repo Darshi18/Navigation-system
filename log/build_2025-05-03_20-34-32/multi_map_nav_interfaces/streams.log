@@ -1,0 +1,237 @@
+[0.012s] Invoking command in '/home/dd/task/build/multi_map_nav_interfaces': /usr/bin/cmake /home/dd/task/src/multi_map_nav_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/dd/task/install/multi_map_nav_interfaces
+[0.082s] -- The C compiler identification is GNU 11.4.0
+[0.153s] -- The CXX compiler identification is GNU 11.4.0
+[0.162s] -- Detecting C compiler ABI info
+[0.240s] -- Detecting C compiler ABI info - done
+[0.250s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.250s] -- Detecting C compile features
+[0.251s] -- Detecting C compile features - done
+[0.255s] -- Detecting CXX compiler ABI info
+[0.357s] -- Detecting CXX compiler ABI info - done
+[0.368s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.368s] -- Detecting CXX compile features
+[0.369s] -- Detecting CXX compile features - done
+[0.372s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.549s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.654s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.658s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.666s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.721s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.776s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.864s] -- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)
+[1.253s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.580s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.974s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.000s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.002s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.031s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.031s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.031s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.031s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.057s] -- Found PythonExtra: .so  
+[2.139s] -- Configuring done
+[2.182s] -- Generating done
+[2.185s] [33mCMake Warning:
+[2.185s]   Manually-specified variables were not used by the project:
+[2.185s] 
+[2.185s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[2.185s] 
+[2.185s] [0m
+[2.196s] -- Build files have been written to: /home/dd/task/build/multi_map_nav_interfaces
+[2.206s] Invoked command in '/home/dd/task/build/multi_map_nav_interfaces' returned '0': /usr/bin/cmake /home/dd/task/src/multi_map_nav_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/dd/task/install/multi_map_nav_interfaces
+[2.208s] Invoking command in '/home/dd/task/build/multi_map_nav_interfaces': /usr/bin/cmake --build /home/dd/task/build/multi_map_nav_interfaces -- -j8 -l8
+[2.254s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.266s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.276s] [  6%] Built target ament_cmake_python_copy_multi_map_nav_interfaces
+[2.590s] running egg_info
+[2.590s] creating multi_map_nav_interfaces.egg-info
+[2.591s] writing multi_map_nav_interfaces.egg-info/PKG-INFO
+[2.591s] writing dependency_links to multi_map_nav_interfaces.egg-info/dependency_links.txt
+[2.591s] writing top-level names to multi_map_nav_interfaces.egg-info/top_level.txt
+[2.591s] writing manifest file 'multi_map_nav_interfaces.egg-info/SOURCES.txt'
+[2.593s] reading manifest file 'multi_map_nav_interfaces.egg-info/SOURCES.txt'
+[2.594s] writing manifest file 'multi_map_nav_interfaces.egg-info/SOURCES.txt'
+[2.624s] [  6%] Built target ament_cmake_python_build_multi_map_nav_interfaces_egg
+[2.815s] [  9%] [32mBuilding C object CMakeFiles/multi_map_nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/multi_map_nav_interfaces/action/detail/multi_map_navigate__functions.c.o[0m
+[2.828s] [  9%] Built target multi_map_nav_interfaces__cpp
+[2.841s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.841s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.841s] [ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.021s] [ 22%] [32m[1mLinking C shared library libmulti_map_nav_interfaces__rosidl_generator_c.so[0m
+[3.066s] [ 22%] Built target multi_map_nav_interfaces__rosidl_generator_c
+[3.079s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.083s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.084s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.348s] [ 35%] [32mBuilding CXX object CMakeFiles/multi_map_nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/multi_map_nav_interfaces/action/detail/multi_map_navigate__type_support.cpp.o[0m
+[3.371s] [ 38%] [32mBuilding CXX object CMakeFiles/multi_map_nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/multi_map_nav_interfaces/action/multi_map_navigate__type_support.cpp.o[0m
+[3.636s] [ 41%] [32mBuilding CXX object CMakeFiles/multi_map_nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/multi_map_nav_interfaces/action/detail/dds_fastrtps/multi_map_navigate__type_support.cpp.o[0m
+[3.696s] [ 45%] [32mBuilding CXX object CMakeFiles/multi_map_nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/multi_map_nav_interfaces/action/multi_map_navigate__type_support.cpp.o[0m
+[3.698s] [ 48%] [32mBuilding CXX object CMakeFiles/multi_map_nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/multi_map_nav_interfaces/action/detail/multi_map_navigate__type_support_c.cpp.o[0m
+[3.767s] [ 51%] [32m[1mLinking CXX shared library libmulti_map_nav_interfaces__rosidl_typesupport_c.so[0m
+[3.842s] [ 51%] Built target multi_map_nav_interfaces__rosidl_typesupport_c
+[3.934s] [ 54%] [32mBuilding C object CMakeFiles/multi_map_nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/multi_map_nav_interfaces/action/detail/multi_map_navigate__type_support.c.o[0m
+[4.026s] [ 58%] [32m[1mLinking C shared library libmulti_map_nav_interfaces__rosidl_typesupport_introspection_c.so[0m
+[4.076s] [ 58%] Built target multi_map_nav_interfaces__rosidl_typesupport_introspection_c
+[4.240s] [ 61%] [32m[1mLinking CXX shared library libmulti_map_nav_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[4.275s] [ 64%] [32m[1mLinking CXX shared library libmulti_map_nav_interfaces__rosidl_typesupport_cpp.so[0m
+[4.344s] [ 64%] Built target multi_map_nav_interfaces__rosidl_typesupport_cpp
+[4.365s] [ 64%] Built target multi_map_nav_interfaces__rosidl_typesupport_introspection_cpp
+[4.424s] [ 67%] [32m[1mLinking CXX shared library libmulti_map_nav_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[4.547s] [ 67%] Built target multi_map_nav_interfaces__rosidl_typesupport_fastrtps_c
+[4.567s] [ 70%] [32m[1mLinking CXX shared library libmulti_map_nav_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.673s] [ 70%] Built target multi_map_nav_interfaces__rosidl_typesupport_fastrtps_cpp
+[4.700s] [ 70%] Built target multi_map_nav_interfaces
+[4.725s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.625s] [ 74%] Built target multi_map_nav_interfaces__py
+[5.654s] [ 77%] [32mBuilding C object CMakeFiles/multi_map_nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/multi_map_nav_interfaces/action/_multi_map_navigate_s.c.o[0m
+[5.831s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/multi_map_nav_interfaces/libmulti_map_nav_interfaces__rosidl_generator_py.so[0m
+[5.882s] [ 80%] Built target multi_map_nav_interfaces__rosidl_generator_py
+[5.906s] [ 90%] [32mBuilding C object CMakeFiles/multi_map_nav_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/multi_map_nav_interfaces/_multi_map_nav_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[5.906s] [ 90%] [32mBuilding C object CMakeFiles/multi_map_nav_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/multi_map_nav_interfaces/_multi_map_nav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.906s] [ 90%] [32mBuilding C object CMakeFiles/multi_map_nav_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/multi_map_nav_interfaces/_multi_map_nav_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.060s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.063s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.075s] [100%] [32m[1mLinking C shared library rosidl_generator_py/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.118s] [100%] Built target multi_map_nav_interfaces__rosidl_typesupport_introspection_c__pyext
+[6.121s] [100%] Built target multi_map_nav_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[6.132s] [100%] Built target multi_map_nav_interfaces__rosidl_typesupport_c__pyext
+[6.146s] Invoked command in '/home/dd/task/build/multi_map_nav_interfaces' returned '0': /usr/bin/cmake --build /home/dd/task/build/multi_map_nav_interfaces -- -j8 -l8
+[6.159s] Invoking command in '/home/dd/task/build/multi_map_nav_interfaces': /usr/bin/cmake --install /home/dd/task/build/multi_map_nav_interfaces
+[6.168s] -- Install configuration: ""
+[6.168s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/ament_index/resource_index/rosidl_interfaces/multi_map_nav_interfaces
+[6.168s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces
+[6.168s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action
+[6.169s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/multi_map_navigate.h
+[6.169s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail
+[6.169s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__functions.c
+[6.169s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__functions.h
+[6.169s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__type_support.h
+[6.169s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__struct.h
+[6.169s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg
+[6.170s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg/rosidl_generator_c__visibility_control.h
+[6.170s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/library_path.sh
+[6.170s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/library_path.dsv
+[6.170s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_generator_c.so
+[6.171s] -- Set runtime path of "/home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_generator_c.so" to ""
+[6.171s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces
+[6.171s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action
+[6.171s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail
+[6.171s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__rosidl_typesupport_fastrtps_c.h
+[6.171s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg
+[6.171s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.172s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_fastrtps_c.so
+[6.172s] -- Set runtime path of "/home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[6.172s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces
+[6.172s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action
+[6.172s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail
+[6.172s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__rosidl_typesupport_introspection_c.h
+[6.172s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__type_support.c
+[6.172s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg
+[6.173s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.173s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_introspection_c.so
+[6.173s] -- Set runtime path of "/home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[6.173s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_c.so
+[6.174s] -- Set runtime path of "/home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_c.so" to ""
+[6.174s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces
+[6.174s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action
+[6.174s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/multi_map_navigate.hpp
+[6.174s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail
+[6.174s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__struct.hpp
+[6.175s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__builder.hpp
+[6.175s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__type_support.hpp
+[6.175s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__traits.hpp
+[6.175s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg
+[6.175s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.175s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces
+[6.175s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action
+[6.175s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail
+[6.175s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/dds_fastrtps
+[6.175s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__rosidl_typesupport_fastrtps_cpp.hpp
+[6.176s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg
+[6.176s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.176s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[6.176s] -- Set runtime path of "/home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.176s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces
+[6.177s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action
+[6.177s] -- Up-to-date: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail
+[6.177s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__rosidl_typesupport_introspection_cpp.hpp
+[6.177s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/include/multi_map_nav_interfaces/multi_map_nav_interfaces/action/detail/multi_map_navigate__type_support.cpp
+[6.177s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_introspection_cpp.so
+[6.178s] -- Set runtime path of "/home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[6.178s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_cpp.so
+[6.178s] -- Set runtime path of "/home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_typesupport_cpp.so" to ""
+[6.178s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/pythonpath.sh
+[6.178s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/pythonpath.dsv
+[6.179s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces-0.0.1-py3.10.egg-info
+[6.179s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces-0.0.1-py3.10.egg-info/SOURCES.txt
+[6.179s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces-0.0.1-py3.10.egg-info/dependency_links.txt
+[6.179s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces-0.0.1-py3.10.egg-info/PKG-INFO
+[6.179s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces-0.0.1-py3.10.egg-info/top_level.txt
+[6.179s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces
+[6.179s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/action
+[6.180s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/action/__init__.py
+[6.180s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/action/_multi_map_navigate.py
+[6.180s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/action/_multi_map_navigate_s.c
+[6.180s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.180s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.180s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.181s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/__init__.py
+[6.181s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/_multi_map_nav_interfaces_s.ep.rosidl_typesupport_c.c
+[6.181s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/libmulti_map_nav_interfaces__rosidl_generator_py.so
+[6.181s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/_multi_map_nav_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[6.181s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/_multi_map_nav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.226s] Listing '/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces'...
+[6.226s] Compiling '/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/__init__.py'...
+[6.226s] Listing '/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/action'...
+[6.226s] Compiling '/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/action/__init__.py'...
+[6.226s] Compiling '/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/action/_multi_map_navigate.py'...
+[6.231s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.231s] -- Set runtime path of "/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.232s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.232s] -- Set runtime path of "/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.232s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.233s] -- Set runtime path of "/home/dd/task/install/multi_map_nav_interfaces/local/lib/python3.10/dist-packages/multi_map_nav_interfaces/multi_map_nav_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.233s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_generator_py.so
+[6.234s] -- Set runtime path of "/home/dd/task/install/multi_map_nav_interfaces/lib/libmulti_map_nav_interfaces__rosidl_generator_py.so" to ""
+[6.234s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/action/MultiMapNavigate.idl
+[6.234s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/action/MultiMapNavigate.action
+[6.234s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/ament_index/resource_index/package_run_dependencies/multi_map_nav_interfaces
+[6.234s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/ament_index/resource_index/parent_prefix_path/multi_map_nav_interfaces
+[6.235s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/ament_prefix_path.sh
+[6.235s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/ament_prefix_path.dsv
+[6.235s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/path.sh
+[6.235s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/environment/path.dsv
+[6.235s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/local_setup.bash
+[6.235s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/local_setup.sh
+[6.236s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/local_setup.zsh
+[6.236s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/local_setup.dsv
+[6.236s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/package.dsv
+[6.236s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/ament_index/resource_index/packages/multi_map_nav_interfaces
+[6.236s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_generator_cExport.cmake
+[6.236s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_generator_cExport-noconfig.cmake
+[6.237s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[6.237s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.237s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[6.237s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.237s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_cExport.cmake
+[6.237s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[6.238s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_generator_cppExport.cmake
+[6.238s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.238s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.238s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[6.238s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.239s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_cppExport.cmake
+[6.239s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[6.239s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_generator_pyExport.cmake
+[6.239s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/export_multi_map_nav_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[6.239s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/rosidl_cmake-extras.cmake
+[6.239s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.239s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.239s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[6.240s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[6.240s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.240s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.240s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfacesConfig.cmake
+[6.240s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/cmake/multi_map_nav_interfacesConfig-version.cmake
+[6.240s] -- Installing: /home/dd/task/install/multi_map_nav_interfaces/share/multi_map_nav_interfaces/package.xml
+[6.243s] Invoked command in '/home/dd/task/build/multi_map_nav_interfaces' returned '0': /usr/bin/cmake --install /home/dd/task/build/multi_map_nav_interfaces
