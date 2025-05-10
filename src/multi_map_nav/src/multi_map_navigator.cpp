@@ -3,6 +3,7 @@
 #include <thread>
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+#include "ament_index_cpp/get_package_share_directory.hpp"
 
 #include <nav2_msgs/srv/load_map.hpp>
 
@@ -13,7 +14,9 @@ MultiMapNavigator::MultiMapNavigator()
 : Node("multi_map_navigator")
 {
   // Create action client for sending navigation goals
-  nav_client_ = rclcpp_action::create_client<MultiMapNavigate>(this, "multi_map_navigator");
+  //nav_client_ = rclcpp_action::create_client<MultiMapNavigate>(this, "multi_map_navigator");
+  nav_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose");
+
 
   // Create action server for handling incoming navigation requests
   action_server_ = rclcpp_action::create_server<MultiMapNavigate>(
@@ -26,6 +29,10 @@ MultiMapNavigator::MultiMapNavigator()
 
   // Publisher to reset AMCL
   initialpose_pub_ = this->create_publisher<geometry_msgs::msg::PoseWithCovarianceStamped>("/initialpose", 10);
+  amcl_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>(
+    "/amcl_pose", 10,
+    std::bind(&MultiMapNavigator::amcl_pose_callback, this, std::placeholders::_1));
+
 
   // Open SQLite DB
   int rc = sqlite3_open("wormholes.db", &db_);
@@ -37,7 +44,7 @@ MultiMapNavigator::MultiMapNavigator()
   }
 
   // Set initial map name
-  current_map_ = "map1";  // Set this according to your starting map
+  current_map_ = "room1";  // Set this according to your starting map
   map_load_client_ = this->create_client<nav2_msgs::srv::LoadMap>("/map_server/load_map");
 }
 
@@ -50,95 +57,123 @@ MultiMapNavigator::~MultiMapNavigator()
 
 void MultiMapNavigator::send_goal(double x, double y, double theta, const std::string & target_map)
 {
-  if (!nav_client_->wait_for_action_server(5s)) {
-    RCLCPP_ERROR(this->get_logger(), "Action server not available");
+  switch_map(target_map);
+  using NavigateToPose = nav2_msgs::action::NavigateToPose;
+
+  auto nav_client = rclcpp_action::create_client<NavigateToPose>(this, "navigate_to_pose");
+
+  //if (!navigate_to_pose_client->wait_for_action_server(5s)) {
+  if (!nav_client_->wait_for_action_server(std::chrono::seconds(5))) {
+
+    RCLCPP_ERROR(this->get_logger(), "Navigation action server not available");
     return;
   }
 
-  auto goal_msg = MultiMapNavigate::Goal();
-  goal_msg.x = x;
-  goal_msg.y = y;
-  goal_msg.theta = theta;
-  goal_msg.target_map = target_map;
+  NavigateToPose::Goal goal_msg;
+  goal_msg.pose.header.frame_id = "map";
+  goal_msg.pose.header.stamp = this->now();
+  goal_msg.pose.pose.position.x = x;
+  goal_msg.pose.pose.position.y = y;
 
-  auto send_goal_options = rclcpp_action::Client<MultiMapNavigate>::SendGoalOptions();
+  tf2::Quaternion q;
+  q.setRPY(0, 0, theta);
+  goal_msg.pose.pose.orientation = tf2::toMsg(q);
+
+  auto send_goal_options = rclcpp_action::Client<NavigateToPose>::SendGoalOptions();
   send_goal_options.feedback_callback = [this](auto, const auto & feedback) {
-    RCLCPP_INFO(this->get_logger(), "Feedback: %s", feedback->current_status.c_str());
+    RCLCPP_INFO(this->get_logger(), "NavigateToPose Feedback: %.2f, %.2f",
+                feedback->current_pose.pose.position.x,
+                feedback->current_pose.pose.position.y);
   };
 
-  auto goal_handle_future = nav_client_->async_send_goal(goal_msg, send_goal_options);
-  if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), goal_handle_future, 30s) !=
-      rclcpp::FutureReturnCode::SUCCESS || !goal_handle_future.get()) {
-    RCLCPP_ERROR(this->get_logger(), "Failed to send goal or goal was rejected.");
-    return;
-  }
+  auto goal_handle_future = nav_client->async_send_goal(goal_msg, send_goal_options);
+  rclcpp::executors::SingleThreadedExecutor exec;
+  exec.add_node(shared_from_this());
 
-  auto result_future = nav_client_->async_get_result(goal_handle_future.get());
+ if (exec.spin_until_future_complete(goal_handle_future, 30s) != rclcpp::FutureReturnCode::SUCCESS ||
+    !goal_handle_future.get())
+ {
+  RCLCPP_ERROR(this->get_logger(), "Failed to send goal");
+  return;
+ }
 
+  auto result_future = nav_client->async_get_result(goal_handle_future.get());
   if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), result_future, 60s) !=
       rclcpp::FutureReturnCode::SUCCESS) {
-    RCLCPP_ERROR(this->get_logger(), "Navigation to goal did not complete successfully.");
+    RCLCPP_ERROR(this->get_logger(), "Navigation did not complete.");
     return;
   }
 
-  // Access the actual result inside the WrappedResult
   auto result = result_future.get();
-
-  if (result.result->success) {
-    RCLCPP_INFO(this->get_logger(), "Navigation goal succeeded.");
+  if (result.code == rclcpp_action::ResultCode::SUCCEEDED) {
+    RCLCPP_INFO(this->get_logger(), "Navigation succeeded.");
   } else {
-    RCLCPP_ERROR(this->get_logger(), "Navigation goal failed.");
+    RCLCPP_ERROR(this->get_logger(), "Navigation failed.");
   }
-
 }
 
 void MultiMapNavigator::switch_map(const std::string & map_name)
 {
-  // Create request
   auto request = std::make_shared<nav2_msgs::srv::LoadMap::Request>();
-  request->map_url = "maps/" + map_name + ".yaml";  // Adjust this path to match your maps
 
-  // Wait for service
+  // Use absolute path to the map
+  std::string base_path = "/home/dd/task/";  // <-- Set this to your actual map directory
+  request->map_url = base_path + map_name + ".yaml";
+
   if (!map_load_client_->wait_for_service(5s)) {
     RCLCPP_ERROR(this->get_logger(), "Map load service not available");
     return;
   }
 
-  // Call service
   auto future = map_load_client_->async_send_request(request);
-  if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), future, 5s) ==
-      rclcpp::FutureReturnCode::SUCCESS)
-  {
+  if (future.wait_for(std::chrono::seconds(5)) == std::future_status::ready) {
+    auto response = future.get();
     RCLCPP_INFO(this->get_logger(), "Map switched to: %s", map_name.c_str());
     current_map_ = map_name;
     reset_amcl();
-  }
-  else
-  {
+  } else {
     RCLCPP_ERROR(this->get_logger(), "Failed to switch map to: %s", map_name.c_str());
   }
 }
 
 
-void MultiMapNavigator::reset_amcl()
+/*void MultiMapNavigator::reset_amcl()
 {
   RCLCPP_INFO(this->get_logger(), "Resetting AMCL via /initialpose...");
+} */
+
+void MultiMapNavigator::reset_amcl()
+{
+  /*geometry_msgs::msg::PoseWithCovarianceStamped init_pose = current_amcl_pose_;  // reuse or modify
+  //init_pose.header.stamp = this->now();
+  initial_pose.header.stamp = this->now() - rclcpp::Duration::from_seconds(0.1); 
+  init_pose.header.frame_id = "map";*/
+  geometry_msgs::msg::PoseWithCovarianceStamped initial_pose;
+  initial_pose.header.stamp = this->now() - rclcpp::Duration::from_seconds(0.1);
+  initial_pose.header.frame_id = "map";
+
+  // Example: keep covariance the same, or manually reset if needed
+  initialpose_pub_->publish(initial_pose);
+  RCLCPP_INFO(this->get_logger(), "AMCL reset with pose: x=%.2f, y=%.2f",
+              initial_pose.pose.pose.position.x, initial_pose.pose.pose.position.y);
 }
 
-std::pair<double, double> MultiMapNavigator::get_wormhole_position(const std::string & map_name)
+
+std::pair<double, double> MultiMapNavigator::get_wormhole_position(const std::string & map_name, const std::string & to_map)
 {
   double x = 0.0, y = 0.0;
-  std::string sql = "SELECT x, y FROM wormholes WHERE map_name = ?";
+  std::string sql = "SELECT to_pose_x, to_pose_y FROM wormholes WHERE from_map = ? AND to_map = ?";
   sqlite3_stmt * stmt;
 
   if (!db_) return {x, y};
 
   if (sqlite3_prepare_v2(db_, sql.c_str(), -1, &stmt, nullptr) == SQLITE_OK) {
     sqlite3_bind_text(stmt, 1, map_name.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(stmt, 2, to_map.c_str(), -1, SQLITE_TRANSIENT);
 
     if (sqlite3_step(stmt) == SQLITE_ROW) {
-      x = sqlite3_column_double(stmt, 0);
-      y = sqlite3_column_double(stmt, 1);
+      x = sqlite3_column_double(stmt, 0); // to_pose_x
+      y = sqlite3_column_double(stmt, 1); // to_pose_y
     }
 
     sqlite3_finalize(stmt);
@@ -155,11 +190,20 @@ rclcpp_action::GoalResponse MultiMapNavigator::handle_goal(
   return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
 }
 
+
 rclcpp_action::CancelResponse MultiMapNavigator::handle_cancel(
   const std::shared_ptr<rclcpp_action::ServerGoalHandle<MultiMapNavigate>>)
 {
   RCLCPP_INFO(this->get_logger(), "Goal cancel requested.");
   return rclcpp_action::CancelResponse::ACCEPT;
+}
+
+void MultiMapNavigator::amcl_pose_callback(const geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg)
+{
+  current_amcl_pose_ = *msg;
+  RCLCPP_DEBUG(this->get_logger(), "Updated AMCL pose: x=%.2f, y=%.2f",
+               current_amcl_pose_.pose.pose.position.x,
+               current_amcl_pose_.pose.pose.position.y);
 }
 
 void MultiMapNavigator::handle_accepted(
@@ -218,7 +262,7 @@ void MultiMapNavigator::execute_navigation(
   std::this_thread::sleep_for(2s);
 
   geometry_msgs::msg::PoseWithCovarianceStamped pose;
-  pose.header.stamp = now();
+  pose.header.stamp = this->now() - rclcpp::Duration::from_seconds(0.1);
   pose.header.frame_id = "map";
   pose.pose.pose.position.x = to_x;
   pose.pose.pose.position.y = to_y;
@@ -242,4 +286,4 @@ void MultiMapNavigator::execute_navigation(
   result->success = true;
   goal_handle->succeed(result);
 }
-
+22
